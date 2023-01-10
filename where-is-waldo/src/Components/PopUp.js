@@ -1,13 +1,15 @@
 import React from "react";
 //make the popUp and transparency disappear
-function handleSubmit(e) {
-  e.preventDefault();
-  const popUp = document.querySelector(".popUp");
-  const transparent = document.querySelector(".transparent");
-  popUp.style.visibility = "hidden";
-  transparent.style.visibility = "hidden";
-}
+
 function PopUp({ name, setName, setStartGameFlag }) {
+  function handleSubmit(e) {
+    e.preventDefault();
+    const popUp = document.querySelector(".popUp");
+    const transparent = document.querySelector(".transparent");
+    popUp.style.visibility = "hidden";
+    transparent.style.visibility = "hidden";
+    setStartGameFlag(1);
+  }
   return (
     <>
       <div className="transparent"></div>
