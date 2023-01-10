@@ -6,8 +6,10 @@ function PopUp({ name, setName, setStartGameFlag }) {
     e.preventDefault();
     const popUp = document.querySelector(".popUp");
     const transparent = document.querySelector(".transparent");
-    popUp.style.visibility = "hidden";
-    transparent.style.visibility = "hidden";
+    popUp.classList.add("invisible");
+    transparent.classList.add("invisible");
+    //to enable scroll
+    //to start timer
     setStartGameFlag(1);
   }
   return (
