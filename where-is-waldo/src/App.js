@@ -8,7 +8,7 @@ function App() {
   const [name, setName] = useState("");
   const [startGameFlag, setstartGameFlag] = useState(0);
   useEffect(() => {
-    console.log("");
+   
   }, [startGameFlag]);
 
   return (
